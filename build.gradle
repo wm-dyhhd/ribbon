@@ -19,6 +19,8 @@ subprojects {
     group = "com.netflix.${githubProjectName}" // TEMPLATE: Set to organization of project
 
     repositories {
+	    mavenLocal()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/'}
         mavenCentral()
     }
 
